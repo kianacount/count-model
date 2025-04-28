@@ -22,17 +22,26 @@
 
   <section class="hero fade-in">
     <h2>State-of-the-Art Object Counting</h2>
-    <p>CountGD enables highly accurate counting across diverse domains, using multi-modal prompts and visual examples — all without retraining.</p>
+    <p>Flexible, accurate counting across diverse domains with minimal setup — powered by multi-modal prompts and visual examples.</p>
   </section>
 
-  <section class="section fade-in">
-    <h2>Why CountGD?</h2>
-    <ul>
-      <li>Works across any domain with no additional training</li>
-      <li>Handles complex overlapping objects effortlessly</li>
-      <li>Margin of error typically below 5%</li>
-      <li>Flexible prompting using text, images, or both</li>
-    </ul>
+  <section class="features fade-in">
+    <div class="feature left">
+      <h2>Cross-Domain Flexibility</h2>
+      <p>CountGD adapts to any type of object — wildlife, medical imaging, industrial inspection — without retraining.</p>
+    </div>
+    <div class="feature right">
+      <h2>High Accuracy</h2>
+      <p>Typically less than 5% error margin, even in complex images containing hundreds of overlapping objects.</p>
+    </div>
+    <div class="feature left">
+      <h2>Prompt-Based Counting</h2>
+      <p>Use natural language prompts, visual examples, or both to guide the model on what to count.</p>
+    </div>
+    <div class="feature right">
+      <h2>Training-Free Deployment</h2>
+      <p>Ready to count out of the box — no need for costly model retraining or fine-tuning.</p>
+    </div>
   </section>
 
 </main>
@@ -44,20 +53,22 @@
 <footer>
   <p>&copy; 2025 CountGD Project | VGG, University of Oxford</p>
 </footer>
+
+<!-- Fade In Script -->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      });
-      document.querySelectorAll('.fade-in').forEach(section => {
-        observer.observe(section);
-      });
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
     });
-    </script>
-    
+  });
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
+});
+</script>
+
 </body>
 </html>

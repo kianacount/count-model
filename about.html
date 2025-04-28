@@ -20,14 +20,16 @@
 
 <main>
 
-  <section class="section fade-in">
-    <h2>What is CountGD?</h2>
-    <p>CountGD is a groundbreaking multi-modal object counting model. It accepts prompts through text, visual examples, or both, enabling it to flexibly and accurately count objects across an open world of use cases without needing retraining for each domain.</p>
-  </section>
+  <section class="features fade-in">
+    <div class="feature left">
+      <h2>What is CountGD?</h2>
+      <p>CountGD is an open-world multi-modal object counting model that flexibly counts any type of object through prompts and examples. It generalizes across new domains without retraining.</p>
+    </div>
 
-  <section class="section fade-in">
-    <h2>Clarification</h2>
-    <p>CountGD is not a segmentation model. It focuses specifically on object counting, producing precise total counts rather than object boundaries or masks.</p>
+    <div class="feature right small-feature">
+      <h2>Clarification</h2>
+      <p>CountGD is a counting model — it does not perform object segmentation or instance separation. It outputs a precise total count based on the prompt.</p>
+    </div>
   </section>
 
 </main>
@@ -39,20 +41,22 @@
 <footer>
   <p>&copy; 2025 CountGD Project | VGG, University of Oxford</p>
 </footer>
+
+<!-- Fade In Script -->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      });
-      document.querySelectorAll('.fade-in').forEach(section => {
-        observer.observe(section);
-      });
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
     });
-    </script>
-    
+  });
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
+});
+</script>
+
 </body>
 </html>
