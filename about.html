@@ -21,15 +21,22 @@
 <main>
 
   <section class="features fade-in">
+
     <div class="feature left">
       <h2>What is CountGD?</h2>
-      <p>CountGD is an open-world multi-modal object counting model that flexibly counts any type of object through prompts and examples. It generalizes across new domains without retraining.</p>
+      <p>CountGD is an open-world multi-modal object counting model that flexibly counts any type of object through prompts and examples. It generalizes across new domains without retraining, achieving high accuracy even on complex and crowded images.</p>
     </div>
 
-    <div class="feature right small-feature">
-      <h2>Clarification</h2>
-      <p>CountGD is a counting model — it does not perform object segmentation or instance separation. It outputs a precise total count based on the prompt.</p>
+    <div class="feature right">
+      <h2>Key Innovations</h2>
+      <p>CountGD is the first model to combine both visual exemplars and text prompts to guide object counting, leveraging the GroundingDINO foundation. It sets a new benchmark in open-world counting, enabling users to count any object without retraining, while offering enhanced accuracy and flexibility through multi-modal prompting.</p>
     </div>
+
+    <div class="feature left small-feature">
+      <h2>Clarification</h2>
+      <p>CountGD is a counting model — it outputs the number of instances of an object. It does not perform segmentation or provide object masks. The focus is purely on accurate counting based on the user’s text or visual prompt.</p>
+    </div>
+
   </section>
 
 </main>
