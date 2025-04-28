@@ -184,3 +184,27 @@ footer {
     transform: scale(1.03);
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.gallery-pair img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-pair img:hover {
+    transform: scale(1.05);
+}
