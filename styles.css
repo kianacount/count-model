@@ -69,6 +69,7 @@ main {
     text-decoration: none;
     font-size: 1rem;
     border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 .button:hover {
@@ -118,24 +119,44 @@ footer {
     font-size: 0.8rem;
     color: #666;
 }
-.case-studies {
+
+/* Try CountGD button */
+.try-countgd {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+}
+
+/* Case Studies - Fancy Layout */
+.case-studies-grid {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    max-width: 900px;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .case-study {
     background: #ffffff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 70%;
+}
+
+.case-study.left {
+    align-self: flex-start;
+}
+
+.case-study.right {
+    align-self: flex-end;
 }
 
 .case-study h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 15px;
 }
 
@@ -157,4 +178,9 @@ footer {
 
 .case-study .button:hover {
     background-color: #444;
+}
+
+.case-study:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
