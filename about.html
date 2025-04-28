@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About CountGD</title>
-    <link rel="stylesheet" href="/count-model/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About CountGD</title>
+  <link rel="stylesheet" href="/count-model/styles.css">
 </head>
 <body>
-    <header>
-        <h1>About CountGD</h1>
-        <nav>
-            <a href="/count-model/index.html">Home</a>
-            <a href="/count-model/about.html">About</a>
-            <a href="/count-model/gallery.html">Gallery</a>
-            <a href="/count-model/case-studies.html">Case Studies</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="section">
-            <h2>What is CountGD?</h2>
-            <p>CountGD is a multi-modal object counting model that utilizes prompts and visual examples to count objects with exceptional accuracy. It consistently delivers results within a 5% margin of error across complex scenarios with over 100 objects.</p>
-        </section>
+<header>
+  <h1>About CountGD</h1>
+  <nav>
+    <a href="/count-model/index.html">Home</a>
+    <a href="/count-model/about.html">About</a>
+    <a href="/count-model/gallery.html">Gallery</a>
+    <a href="/count-model/case-studies.html">Case Studies</a>
+  </nav>
+</header>
 
-        <section class="section">
-            <h2>Important Clarification</h2>
-            <p>CountGD is <strong>not</strong> a segmentation model. It focuses exclusively on accurate counting without needing to segment each individual object.</p>
-        </section>
+<main>
 
-        <section class="section">
-            <h2>Potential Applications</h2>
-            <ul>
-                <li>Wildlife monitoring and conservation</li>
-                <li>Manufacturing quality control</li>
-                <li>Retail inventory analysis</li>
-                <li>Medical imaging and diagnostics</li>
-                <li>Material science and research</li>
-            </ul>
-        </section>
-    </main>
-    <div class="try-countgd">
-        <a href="https://huggingface.co/spaces/nikigoli/countgd" target="_blank" class="button">Try CountGD</a>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 CountGD Project | VGG, University of Oxford</p>
-    </footer>
+  <section class="section">
+    <h2>What is CountGD?</h2>
+    <p>CountGD is a multi-modal object counting model developed to deliver highly accurate object counts across a wide variety of domains. It uses prompts and visual examples, and maintains a margin of error under 5%, even in complex, real-world scenes.</p>
+  </section>
+
+  <section class="section">
+    <h2>How CountGD Works</h2>
+    <p>Unlike segmentation models, CountGD focuses specifically on counting without requiring per-object segmentation. Users provide textual descriptions, visual examples, or a combination of both to guide the model toward accurate counting results.</p>
+  </section>
+
+</main>
+
+<!-- Try CountGD button at bottom -->
+<div class="try-countgd">
+  <a href="https://huggingface.co/spaces/nikigoli/countgd" target="_blank" class="button">Try CountGD</a>
+</div>
+
+<footer>
+  <p>&copy; 2025 CountGD Project | VGG, University of Oxford</p>
+</footer>
+
 </body>
 </html>
