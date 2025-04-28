@@ -20,19 +20,18 @@
 
 <main>
 
-  <section class="section">
+  <section class="section fade-in">
     <h2>What is CountGD?</h2>
-    <p>CountGD is a multi-modal object counting model developed to deliver highly accurate object counts across a wide variety of domains. It uses prompts and visual examples, and maintains a margin of error under 5%, even in complex, real-world scenes.</p>
+    <p>CountGD is a groundbreaking multi-modal object counting model. It accepts prompts through text, visual examples, or both, enabling it to flexibly and accurately count objects across an open world of use cases without needing retraining for each domain.</p>
   </section>
 
-  <section class="section">
-    <h2>How CountGD Works</h2>
-    <p>Unlike segmentation models, CountGD focuses specifically on counting without requiring per-object segmentation. Users provide textual descriptions, visual examples, or a combination of both to guide the model toward accurate counting results.</p>
+  <section class="section fade-in">
+    <h2>Clarification</h2>
+    <p>CountGD is not a segmentation model. It focuses specifically on object counting, producing precise total counts rather than object boundaries or masks.</p>
   </section>
 
 </main>
 
-<!-- Try CountGD button at bottom -->
 <div class="try-countgd">
   <a href="https://huggingface.co/spaces/nikigoli/countgd" target="_blank" class="button">Try CountGD</a>
 </div>
@@ -40,6 +39,20 @@
 <footer>
   <p>&copy; 2025 CountGD Project | VGG, University of Oxford</p>
 </footer>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      });
+      document.querySelectorAll('.fade-in').forEach(section => {
+        observer.observe(section);
+      });
+    });
+    </script>
+    
 </body>
 </html>

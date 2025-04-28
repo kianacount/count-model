@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CountGD - Multi-Modal Object Counting</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CountGD | Home</title>
+  <link rel="stylesheet" href="/count-model/styles.css">
 </head>
 <body>
-    <header>
-        <h1>CountGD</h1>
-        <nav>
-            <a href="/count-model/index.html">Home</a>
-            <a href="/count-model/about.html">About</a>
-            <a href="/count-model/gallery.html">Gallery</a>
-            <a href="/count-model/case-studies.html">Case Studies</a>
-          </nav>
-          
-    </header>
 
-    <main>
-        <section class="hero">
-            <h2>Precise Multi-Modal Object Counting</h2>
-            <p>CountGD brings state-of-the-art accuracy in counting objects across a wide range of real-world applications using prompts and examples.</p>
-        </section>
-    </main>
-    <div class="try-countgd">
-        <a href="https://huggingface.co/spaces/nikigoli/countgd" target="_blank" class="button">Try CountGD</a>
-    </div>
+<header>
+  <h1>CountGD: Multi-Modal Open-World Counting</h1>
+  <nav>
+    <a href="/count-model/index.html">Home</a>
+    <a href="/count-model/about.html">About</a>
+    <a href="/count-model/gallery.html">Gallery</a>
+    <a href="/count-model/case-studies.html">Case Studies</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero fade-in">
+    <h2>State-of-the-Art Object Counting</h2>
+    <p>CountGD enables highly accurate counting across diverse domains, using multi-modal prompts and visual examples — all without retraining.</p>
+  </section>
+
+  <section class="section fade-in">
+    <h2>Why CountGD?</h2>
+    <ul>
+      <li>Works across any domain with no additional training</li>
+      <li>Handles complex overlapping objects effortlessly</li>
+      <li>Margin of error typically below 5%</li>
+      <li>Flexible prompting using text, images, or both</li>
+    </ul>
+  </section>
+
+</main>
+
+<div class="try-countgd">
+  <a href="https://huggingface.co/spaces/nikigoli/countgd" target="_blank" class="button">Try CountGD</a>
+</div>
+
+<footer>
+  <p>&copy; 2025 CountGD Project | VGG, University of Oxford</p>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      });
+      document.querySelectorAll('.fade-in').forEach(section => {
+        observer.observe(section);
+      });
+    });
+    </script>
     
-    <footer>
-        <p>&copy; 2025 CountGD Project | VGG, University of Oxford</p>
-    </footer>
 </body>
 </html>
